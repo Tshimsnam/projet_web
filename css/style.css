@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*****HEADER******/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 0px 8px rgb(10, 7, 18, 0.2);
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+header nav{
+    padding-right: 50px;
+}
+
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #444;
+    font-family: helvetica;
+}
+header nav ul li a:hover{
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/*******Baniere******/
+#banner{
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: cover;
+    background-image: url("https://leseco.ma/wp-content/uploads/2021/10/Orange.jpg");
+
+}
+#banner p{
+    font-size: 4em;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 7px, 10px;
+    border-radius: 4px;
+}
+
+/*****section*****/
+
+.flex-section{
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+
+.flex-section div p{
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-section h3{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+section h2{
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-section.service div{
+    height: 400px;
+    width: 24%;
+    position: relative;
+}
+.flex-section.service div img{
+    width: 350px;
+    height: 350px;
+}
+.flex-section.service div h3{
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+section h2{
+    text-align: center;
+}
+
+.flex-section table{
+    width: 100%;
+    margin-top:50px;
+    font-size: 1.8em;
+}
+
+.flex-section table th, .flex-section table th{
+    text-align: left;
+    padding: 20;
+}
+
+.flex-section table th{
+    background-color: gainsboro;
+}
+
+.flex-section table td{
+    background-color: rgba(230, 230, 230, 0.7);
+}
+
+.flex-section table a{
+    display : inline-block;
+    padding: 10px;
+    color: #fff;
+    background-color: #444;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.flex-section table a:hover{
+    opacity: 0.7;
+}
+.flex-section article{
+    box-shadow: 1px 1px 30px silver;
+}
+
+.flex-section article h3 {
+    text-align: center;
+}
+
+.flex-section article h3 a{
+    text-decoration: none;
+}
+
+.flex-section article img{
+    width: 450px;
+}
+.flex-section article p{
+    font-size: 1.4em;
+}

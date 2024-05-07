@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="">
+            <img src="https://pbs.twimg.com/profile_images/794496612533936128/VwLzyOzn_400x400.jpg" alt="" width="80" height="auto">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="">A propos</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="service.html"></a>Service</li>
+                <li><a href="A_propos.html">A propos</a></li>
+                <li><a href="#section1" >Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +24,7 @@
         <div id="banner">
             <p>Bienvenu dans notre site</p>
         </div>
-        <section>
+        <section class="flex-section">
             <div>
                 <h3>Titre 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quibusdam. Libero, optio perspiciatis quo tempora perferendis blanditiis rem distinctio qui recusandae! Error consequatur eos dicta. Saepe unde inventore molestiae molestias.</p>
@@ -39,76 +41,82 @@
 
         <section>
             <h2>Nos services</h2>
-            <div><img src="" alt=""><h3>Restauration</h3></div>
-            <div><img src="" alt=""><h3>Evènementiel</h3></div>
-            <div><img src="" alt=""><h3>Location</h3></div>
-            <div><img src="" alt=""><h3>Tourisme</h3></div>
+            <div class="flex-section service">
+                <div><img src="https://www.mali.campusfrance.org/sites/pays/files/mali/styles/mobile_visuel_principal_page/public/Chef.jpg?itok=OHxUbgSl" alt=""><h3>Restauration</h3></div>
+                <div><img src="https://echocom.agency/wp-content/uploads/2023/02/Evenementiel-web.png" alt=""><h3>Evènementiel</h3></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDeebOi0CI3xkBL6Tiqcjmpf3kp2u_vb42eu_v6OFW8o7fHghQpv4KRtsUnX_iEERiGD0&usqp=CAU" alt=""><h3>Location</h3></div>
+                <div><img src="https://www.tourmag.com/photo/art/grande/70541435-49193162.jpg?v=1675358159" alt=""><h3>Tourisme</h3></div>
+            </div>
+            
         </section>
         
         <section>
             <h2>Tarification</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Basic</th>
-                        <th>Medium</th>
-                        <th>Premium</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Trafif</th>
-                        <td>Illimité</td>
-                        <td>Illimité</td>
-                        <td>Illimité</td>
-                    </tr>
-
-                    <tr>
-                        <th>Base de données</th>
-                        <td>1</td>
-                        <td>10</td>
-                        <td>50</td>
-                    </tr>
-
-                    <tr>
-                        <th>Messagerie</th>
-                        <td>Indisponible</td>
-                        <td>50</td>
-                        <td>Illimité</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th><a href=""></a></th>
-                        <th><a href="">Commander</a></th>
-                        <th><a href="">Commander</a></th>
-                        <th><a href="">Commander</a></th>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="flex-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Trafif</th>
+                            <td>Illimité</td>
+                            <td>Illimité</td>
+                            <td>Illimité</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Base de données</th>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>50</td>
+                        </tr>
+    
+                        <tr>
+                            <th>Messagerie</th>
+                            <td>Indisponible</td>
+                            <td>50</td>
+                            <td>Illimité</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th><a href="">Commander</a></th>
+                            <th><a href="">Commander</a></th>
+                            <th><a href="">Commander</a></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
         </section>
 
         <section>
             <h2>Blog</h2>
-            <div>
+            <div class="flex-section">
                 <article>
-                    <h3><a href="">Blog1</a>Blog1</h3>
-                    <img src="" alt="">
+                    <h3><a href=""></a>C'est quoi laravel</h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:1358/1*SoJOoRqbFp9fvNILpl4JNw.jpeg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Possimus odit dolorum expedita, perspiciatis nemo a doloremque? </p>
                 </article>
 
                 <article>
-                    <h3><a href="">Blog1</a>Blog1</h3>
-                    <img src="" alt="">
+                    <h3><a href=""></a>un Crud en Laravel</h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:1358/1*SoJOoRqbFp9fvNILpl4JNw.jpeg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Possimus odit dolorum expedita, perspiciatis nemo a doloremque? </p>
                 </article>
 
                 <article>
-                    <h3><a href="">Blog1</a>Blog1</h3>
-                    <img src="" alt="">
+                    <h3><a href=""></a>Authetification avec laravel</h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:1358/1*SoJOoRqbFp9fvNILpl4JNw.jpeg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Possimus odit dolorum expedita, perspiciatis nemo a doloremque? </p>
                 </article>
@@ -116,7 +124,7 @@
         </section>
 
         <section>
-            <h2>Contact</h2>
+            <h2>Contact <a id="section1"></a></h2>
 
             <div>
                 <form action="">
