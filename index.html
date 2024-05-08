@@ -124,17 +124,18 @@
         </section>
 
         <section>
-            <h2>Contact <a id="section1"></a></h2>
-
-            <div>
-                <form action="">
+            <div class="container">
+                <img src="https://th.bing.com/th/id/R.b06ad9a7893e094599a019c2cebe280f?rik=NJ86hjBeUSmmew&pid=ImgRaw&r=0" alt="Background Image">
+            <div class="overlay">
+                <h2 id="contact">Contact <a id="section1"></a></h2>
+                <form action="for">
                     <div>
                         <label for="name">Nom :</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" placeholder="Saisissez votre nom">
                     </div>
                     <div>
                         <label for="email">Email :</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" placeholder="Saisissez votre adresse">
                     </div>
                     <div>
                         <label for="message">Message :</label>
@@ -145,43 +146,160 @@
                     </div>
                 </form>
             </div>
+            </div>
+            
         </section>
 
     </main>
     <footer>
         <div>
-            <div>Suivez nous sur :</div>
+            <div class="flex-footer">
+                    <div>
+                        <h4>Suivez nous sur:</h4>
+
+                        <a href=""><img src="https://th.bing.com/th/id/OIP.lECad1wC12WN1ue6iEKbYwAAAA?rs=1&pid=ImgDetMain" alt=""></a>
+                        <a href=""><img src="https://clipartspub.com/images/facebook-logo-clipart-vector-8.png" alt=""></a>
+                        <a href=""><img src="https://th.bing.com/th/id/R.12119843b1f112f4307b43fb1076aeb9?rik=%2f93sSMcc4%2fg8ZQ&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f06%2fTwitter-symbol.jpg&ehk=Qe4a4OXZadmejpIRZj6d2Aum%2bO2STzn%2bWphV0ag467E%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
+                        <a href=""><img src="https://th.bing.com/th/id/R.63d08e28c42a90dfc2fe2d0b1c7ab00c?rik=tOOgi9vPAbiBfg&pid=ImgRaw&r=0" alt=""></a>
+                    </div>
+                    <div>
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="A_propos.html">A Propos</a></li>
+                            <li><a href="service.html">Services</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><b>Email :</b>info@monsite.com</li>
+                            <li><b>Tél :</b>0835475374</li>
+                            <li><b>Adresse :</b>7, av. Prince, C/Gombe</li>
+                        </ul>
+                    </div>
+                </div>
+   
             <div>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+                Copyright ODC © 2024 Tous droits réservés.
             </div>
+
         </div>
-        <div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h4>Pages</h4>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                        <li><a href="">A Propos</a></li>
-                        <li><a href="">Services</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <ul>
-                    <li><b>Email :</b>info@monsite.com</li>
-                    <li><b>Tél :</b>0835475374</li>
-                    <li><b>Adresse :</b>7, av. Prince, C/Gombe</li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            Copyright ODC © 2024 Tous droits réservés.
-        </div>
+        
     </footer>
+    <script>
+      /*  
+      const pays=['RDC', 'France', 'Gabon']
+      const amerique=['usa','canada','mexique']
+      console.log(pays)
+      pays.pop()
+      console.log(pays)
+      pays.push('Angola')
+      console.log(pays)
+      pays.shift()
+      console.log(pays)
+      pays.unshift('Italie')
+      console.log(pays)
+
+      const pays2=pays.concat(amerique)
+      console.log(pays2)*/
+    
+      /*const pays=['RDC', 'France', 'Gabon','Italie']
+
+        console.log(pays.length)
+
+      for (let i=0; i<pays.length;i++){
+        console.log(pays[i])
+    }*/
+
+    /*const pays=['RDC', 'France', 'Gabon','Italie']
+    let i=0
+    while(i<pays.length){
+        console.log(pays[i])
+
+        i++
+    }*/
+   /* const pays=['RDC', 'France', 'Gabon','Italie']
+    
+    pays.map(rep=> {
+    console.log(rep)})*/
+
+    /*const pays=['RDC', 'France', 'Gabon','Italie']
+
+    const noms="Mars, Jean, Marthe, Julie"
+    const tabnom =noms.split(',')
+    console.log(tabnom)
+    
+    for (let i of pays){
+    console.log(i)}*/
+
+    
+   /* const somme = function (a,b){
+    return a+b
+    }
+   console.log(somme(3,7))
+
+   function soustraction(a,b){
+return a-b}
+console.log(soustraction(15,4))
+
+const som = somme(7,8)
+  
+console.log(som)
+
+const somme1 =(a,b)=>a+b
+
+const carre=b=>b*b
+console.log(carre(9))
+
+const helloword = ()=> (helloword('Hello word'))
+helloword()*/
+
+
+
+
+/*const carre2 = n =>alert(n*n)
+const ledouble = n => alert(n*2) 
+
+function operation(callback){
+    const nombre=prompt('Entrez nombre')
+    collback(nombre)
+
+}
+operation(carre2)
+operation(function(nombre){
+    alert(Math.sqrt(nombre))
+})*/
+
+/*const tab= [
+    {name:'Jean',genre:"Homme"},
+    {name:'sarah',genre:"femme"},
+    {name:'patrick',genre:"Homme"},
+    {name:'esther',genre:"femme"},
+]
+
+tab.map(pers => {
+console.log(pers.name, pers.genre)})*/
+
+/*fetch('https://jsonplaceholder.typicode.com/posts')*/
+
+async function getDate(){
+    let data = await fetch ('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    
+    data.map(rep => {
+    console.log(rep.id, rep.title)})
+}
+getDate()
+
+
+
+
+
+
+
+
+    </script>
+
 </body>
 </html>
