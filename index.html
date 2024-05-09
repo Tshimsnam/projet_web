@@ -15,6 +15,7 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="service.html"></a>Service</li>
+                <li><a href="article.html"></a></li>
                 <li><a href="A_propos.html">A propos</a></li>
                 <li><a href="#section1" >Contact</a></li>
             </ul>
@@ -22,7 +23,7 @@
     </header>
     <main>
         <div id="banner">
-            <p>Bienvenu dans notre site</p>
+            <p onclick="bienvenue()">Bienvenu dans notre site</p>
         </div>
         <section class="flex-section">
             <div>
@@ -40,7 +41,7 @@
         </section>
 
         <section>
-            <h2>Nos services</h2>
+            <h2 >Nos services</h2>
             <div class="flex-section service">
                 <div><img src="https://www.mali.campusfrance.org/sites/pays/files/mali/styles/mobile_visuel_principal_page/public/Chef.jpg?itok=OHxUbgSl" alt=""><h3>Restauration</h3></div>
                 <div><img src="https://echocom.agency/wp-content/uploads/2023/02/Evenementiel-web.png" alt=""><h3>Evènementiel</h3></div>
@@ -51,15 +52,17 @@
         </section>
         
         <section>
-            <h2>Tarification</h2>
+            <h2 >Tarification</h2>
             <div class="flex-section">
                 <table>
                     <thead>
                         <tr>
-                            <th></th>
+                            <th class="vide"></th>
                             <th>Basic</th>
                             <th>Medium</th>
                             <th>Premium</th>
+                            <th><a href="/article/delete/1" onclick="supprimer(event)">Supprimer</a></th>
+                            <td><a href="/article/edit/1" onclick="editer(event)">Editer</a></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,6 +71,8 @@
                             <td>Illimité</td>
                             <td>Illimité</td>
                             <td>Illimité</td>
+                            <th><a href="/article/delete/2" onclick="supprimer(event)">Supprimer</a></th>
+                            <td><a href="/article/edit/1" onclick="editer(event)">Editer</a></td>
                         </tr>
     
                         <tr>
@@ -75,6 +80,8 @@
                             <td>1</td>
                             <td>10</td>
                             <td>50</td>
+                            <th><a href="/article/delete/3" onclick="supprimer(event)">Supprimer</a></th>
+                            <td><a href="/article/edit/1" onclick="editer(event)">Editer</a></td>
                         </tr>
     
                         <tr>
@@ -82,6 +89,8 @@
                             <td>Indisponible</td>
                             <td>50</td>
                             <td>Illimité</td>
+                            <th><a href="/article/delete/4" onclick="supprimer(event)">Supprimer</a></th>
+                            <td><a href="/article/edit/1" onclick="editer(event)">Editer</a></td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -127,8 +136,8 @@
             <div class="container">
                 <img src="https://th.bing.com/th/id/R.b06ad9a7893e094599a019c2cebe280f?rik=NJ86hjBeUSmmew&pid=ImgRaw&r=0" alt="Background Image">
             <div class="overlay">
-                <h2 id="contact">Contact <a id="section1"></a></h2>
-                <form action="for">
+                <h2 id="contact">Contact<a id="section1"></a></h2>
+                <form action="">
                     <div>
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="name" placeholder="Saisissez votre nom">
@@ -179,6 +188,12 @@
                         </ul>
                     </div>
                 </div>
+                <ul>
+                    <li><input type="radio" name="theme" value="white" id="" onclick="theme(event)">Blanc</li>
+                    <li><input type="radio" name="theme" value="red " id="" onclick="theme(event)">rouge</li>
+                    <li></li>
+                    <li></li>
+                </ul>
    
             <div>
                 Copyright ODC © 2024 Tous droits réservés.
@@ -187,6 +202,8 @@
         </div>
         
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
       /*  
       const pays=['RDC', 'France', 'Gabon']
@@ -283,7 +300,7 @@ console.log(pers.name, pers.genre)})*/
 
 /*fetch('https://jsonplaceholder.typicode.com/posts')*/
 
-async function getDate(){
+/*async function getDate(){
     let data = await fetch ('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     
@@ -292,11 +309,97 @@ async function getDate(){
 }
 getDate()
 
+const header =document.querySelector('header nav')
+
+header.style.backgroundColor="red"
+console.log(header.textContent)
+
+function bienvenue(){
+alert('Bienvenue dans notre site')}
 
 
+document.querySelector('h2').
+addEvenListenner('mouseover', (event)=>{
+event.target.style.color="blue"})
+
+document.querySelector('h2').
+addEventListener('mouseleave', (event)=>{
+event.target.style.color="red"})*/
+
+/*const theme =(event)=>{
+document.body.style.background=event.target.value}*/
+
+/*const titre3 = document.querySelectorAll('h3')
+
+for (let i =0; i<titre3.length; i++){
+titre3[i].style.color ="red"}*/
+
+/*const titre3 = document.querySelectorAll('h3')
+
+for (let i =0; i<titre3.length; i++){
+titre3[i].addEventListener('click', ()=> {
+titre3[i].style.color='green'
+})
+}*/
+
+/*recuperer valeur dans un tableau*/
+
+/*function supprimer(event){
+event.preventDefault()
+const lien=event.target.getAttribute('href')
+alert(lien)
+document.querySelector('.overlay form').setAttribute('action', lien)
+}
+
+const form=document.querySelector('.overlay form')
 
 
+    const tr=event.target.closest('tr')
+    alert(tr.children[0].textContent)*/
 
+/*function editer(event){
+event.preventDefault()
+const lien=event.target.getAttribute('href')
+
+document.querySelector('.overlay form').setAttribute('action', lien)
+const form=document.querySelector('.overlay form')
+const tr=event.target.closest('tr')
+alert(tr.children[0].textContent)}*/
+
+/*function editer(event){
+    event.preventDefault()
+    const lien=event.target.getAttribute('href')
+    
+    document.querySelector('.overlay form').
+    setAttribute('action', lien)
+    const form=document.querySelector('.overlay form')
+    const tr=event.target.closest('tr')
+    form.name.value=tr.children[0].textContent
+    form.email.value=tr.children[1].textContent
+    form.message.value=tr.children[2].textContent
+}*/
+
+/*jquery******/
+
+$(document).ready(function(){
+    $('h3').css('color', 'purple')
+
+    $('h2').click(function(){
+    $('p').fadeOut('5000')
+
+})
+
+$('h3').click(function(){
+    $('p').fadeIn(5000)})
+
+    $(h3).click(function(){
+    $('p').fadeToggle('5000')})
+
+    $(h3).click(function(){
+        $('p').slideUp('5000')})
+
+
+})
 
 
     </script>

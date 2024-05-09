@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body onload="getDate()">
+    <header>
+        <div class="logo">
+            <img src="https://pbs.twimg.com/profile_images/794496612533936128/VwLzyOzn_400x400.jpg" alt="" width="80" height="auto">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="service.html"></a>Service</li>
+                <li><a href="article.html"></a>Article</li>
+                <li><a href="A_propos.html">A propos</a></li>
+                <li><a href="#section1" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Nos Articles
+        </h1>
+        <div>
+            <section>
+                <div>
+                    <form action="" method="post" id="createForm" onsubmit="creer(event)">
+                        <p>User :<input type="number" name="userId"></p>
+                        <p>Titre : <input type="text" name="title"></p>
+                        <p>Contenu : <textarea name="body" id="" cols="30" rows="10"></textarea></p>
+                        <p><button type="submit">Valider</button></p>
+                    </form>
+                </div>
+                <table id="tb-article">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>User</th>
+                            <th>Title</th>
+                            <th>Contenu</th>
+                            <th>Editer</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </section>
+            
+            <script src="js/article.js"></script>
+        </div>
+    </main>
+    
+</body>
+</html>
